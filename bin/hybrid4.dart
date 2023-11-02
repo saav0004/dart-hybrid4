@@ -10,7 +10,7 @@ void main() async {
       var lastName = item['last_name'];
       var id = item['uid'];
       print(
-          "\x1B[35mFirst Name:\x1B[0m $firstName \x1B[33m||\x1B[0m \x1B[34mLast Name:\x1B[0m $lastName \x1B[33m||\x1B[0m \x1B[36mID:\x1B[0m $id");
+          "\x1B[35mFirst Name: \x1B[0m$firstName\x1B[33m ||\x1B[0m \x1B[34mLast Name: \x1B[0m$lastName\x1B[33m ||\x1B[0m \x1B[36mID:\x1B[0m $id");
     }
   } catch (e) {
     print("Error: $e");
