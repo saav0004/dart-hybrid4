@@ -9,7 +9,8 @@ void main() async {
       var firstName = item['first_name'];
       var lastName = item['last_name'];
       var id = item['uid'];
-      print("\nFirst Name: $firstName \nLast Name: $lastName \nID: $id");
+      print(
+          "\x1B[35mFirst Name:\x1B[0m $firstName || Last Name: $lastName || ID: $id");
     }
   } catch (e) {
     print("Error: $e");
