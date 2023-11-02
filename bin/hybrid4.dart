@@ -17,7 +17,7 @@ void main() async {
 }
 
 // Fetch function
-Future<List<Map<String, dynamic>>> fetch() async {
+fetch() async {
   var url = "https://random-data-api.com/api/v2/users?size=10";
   var uri = Uri.parse(url);
 
