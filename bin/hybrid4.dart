@@ -3,7 +3,7 @@ import 'dart:convert' as convert;
 
 void main() async {
   try {
-    var data = await fetch();
+    var data = await fetch(10);
 
     for (var item in data) {
       var firstName = item['first_name'];
@@ -17,8 +17,8 @@ void main() async {
 }
 
 // Fetch function
-fetch() async {
-  var url = "https://random-data-api.com/api/v2/users?size=10";
+fetch(numUsers) async {
+  var url = "https://random-data-api.com/api/v2/users?size=$numUsers";
   var uri = Uri.parse(url);
 
   var response = await http.get(uri);
